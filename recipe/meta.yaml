@@ -15,8 +15,8 @@ source:
   sha256: e8279e185fa753cdba2e787136dbbd2e0d86efbe1066e0cc450829a555bf3513
 
 build:
-  number: 0
-  skip: true  # [win32]
+  noarch: generic
+  number: 1000
   rpaths:
     - lib/R/lib/
     - lib/
@@ -49,8 +49,7 @@ about:
     allowed as well as heterogeneous variances (Hasler and Hothorn, 2008) or covariance
     matrices (Hasler, 2014).
   license_family: GPL
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-2'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
 
 extra:
   recipe-maintainers:
