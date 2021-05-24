@@ -5,11 +5,9 @@ Home: https://CRAN.R-project.org/package=SimComp
 
 Package license: GPL-3
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-simcomp-feedstock/blob/master/LICENSE.txt)
 
 Summary: Simultaneous tests and confidence intervals are provided for one-way experimental designs with one or many normally distributed, primary response variables (endpoints). Differences (Hasler and Hothorn, 2011 <doi:10.2202/1557-4679.1258>) or ratios (Hasler and Hothorn, 2012 <doi:10.1080/19466315.2011.633868>) of means can be considered. Various contrasts can be chosen, unbalanced sample sizes are allowed as well as heterogeneous variances (Hasler and Hothorn, 2008 <doi:10.1002/bimj.200710466>) or covariance matrices (Hasler, 2014 <doi:10.1515/ijb-2012-0015>).
-
-
 
 Current build status
 ====================
@@ -38,6 +36,7 @@ Installing `r-simcomp` from the `conda-forge` channel can be achieved by adding 
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `r-simcomp` can be installed with:
@@ -108,9 +107,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
